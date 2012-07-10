@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# Hook script for server called after a successful push is made.
+#
+# Last commit message is sent to Kickoff chat room with format - Gitbot: "Commit message" - Your name
+# 
+# DON'T FORGET:
+# - Change *ID* to your project ID
+# - Change *TOKEN* to your project token
+
+message=$(git log -1 --pretty=format:"\"%s\" - %cN")
+
+curl -d "<request><message>Gitbot: $message</message></request>" http://api.kickoffapp.com/projects/*ID*/chat?token=*TOKEN*
