@@ -5,6 +5,16 @@ Collection of friendly git hooks (currently only for Kickoff).
 
 (Read about it in our blog at Iterar - [http://iterar.co/blog/posts/gitbot-your-new-robot-friend](http://iterar.co/blog/posts/gitbot-your-new-robot-friend))
 
+## How to install
+
+1. Locate your **.git** folder (locally or on your server) and open it
+2. Inside **.git** locate the **hooks** folder and open it
+3. Paste any of the supplied Gitbot hooks (ex. post-receive from the Kickoff folder)
+4. Edit file according to the instructions supplied inside of it
+5. Let the bot dance begin
+
+(Git hooks in-depth explanation - [http://git-scm.com/book/en/Customizing-Git-Git-Hooks](http://git-scm.com/book/en/Customizing-Git-Git-Hooks))
+
 ## License
 
 The MIT License
