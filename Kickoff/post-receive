@@ -8,6 +8,6 @@
 # - Change *ID* to your project ID
 # - Change *TOKEN* to your project token
 
-message=$(git log -1 --pretty=format:"\"%s\" - %cN")
+message=$(git log -1 --all --pretty=format:"\"%s\" - %cN")
 
 curl -d "<request><message>Gitbot: $message</message></request>" http://api.kickoffapp.com/projects/*ID*/chat?token=*TOKEN*
